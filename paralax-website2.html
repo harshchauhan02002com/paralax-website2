@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax-website</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body,html{
+        height: 100%;
+    }
+    .bg{
+        width: 100%;
+        height: 500px;
+        background-attachment: fixed;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .bgimg1{
+        background-image: url(https://images.unsplash.com/photo-1464823063530-08f10ed1a2dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    }
+    .bgimg2{
+        background-image: url(https://plus.unsplash.com/premium_photo-1683141085664-d1f36cac9c38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    }
+    .parallax{
+        background-image: url(https://images.unsplash.com/photo-1482731792218-726f33b79659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+        height: 100%;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .scroll{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    span{
+        padding: 1.5rem;
+        font-size: 2.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: gray;
+        box-shadow: 0 0 10px wheat;
+        color: white;
+    }
+    .p-demo{
+        padding: 50px 80px;
+    }
+    h3{
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 0.5;
+        letter-spacing: 5px;
+    }
+    .text{
+        margin: 20px;
+        color: gray;
+        text-align: center;
+        text-align: justify;
+        font-size: 25px;
+    }
+    .img h3{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        font-size: larger;
+        background-color: gray;
+        padding: 10px;
+        color: white;
+    }
+    .text1{
+        padding: 60px;
+        background-color: gray;
+        font-size: 1.5rem;
+        color: white;
+    }
+</style>
+<body>
+    <div class="parallax">
+        <span class="scroll">SCROLL DOWN</span>
+    </div>
+
+    <div class="p-demo">
+        <h3>PARALLAX DEMO</h3>
+        <p class="text">
+            Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground
+            content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis nunc at, sed posuere mollis ullamcorper
+            libero ante lectus, blandit pellentesque a, magna turpis est sapien duis blandit dignissim. Viverra interdum mi magna mi, 
+            morbi sociis. Condimentum dui ipsum consequat morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. 
+            Varius quisque non molestie dolor, nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, 
+            in in neque risus odio. Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula 
+            lorem mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue etiam maecenas,
+            porta porttitor placerat leo.
+        </p>
+    </div>
+
+    <div  class="bg bgimg1 img">
+        <h3>LESS HEIGHT</h3>
+    </div>
+    <p class="text1">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+
+    <div class="bg bgimg2 img">
+        <h3>SCROLL UP</h3>
+    </div>
+    <p class="text1">Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+
+    <div class="parallax"></div>
+</body>
+</html>
