@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My photo gallery</title>
+    <link rel="icon" href="https://res.cloudinary.com/codehelp/image/upload/v1667493133/codehelpFinalAssets/ort4cxqmugzj9an4sbae.png">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #wrapper{
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .container{
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .container h1{
+        margin: 20px 0;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom:20px;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .card{
+        width: 32%;
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        filter: grayscale(100%);
+    } 
+    .card img{
+        height:100%;
+        width: 100%;
+        /* height: 90%; */
+        border-radius: 10px;
+        /* filter: grayscale(100%); */
+        box-shadow: 0 0 20px #333;
+        object-fit: cover;
+    }
+    .card:hover{
+        transform: scale(1.03);
+        filter: grayscale(0);
+        box-shadow: 0 0 10px #333;
+        transition: 1s;
+    }
+    .card figcaption{
+        position: absolute;
+        bottom: 2%;
+        left: 2%;
+        font-size: 1.2rem;
+        color: white;
+        opacity: 0;
+        background-image: linear-gradient(to bottom, black,);
+        transition: 0.3s;
+    }
+    .card:hover figcaption{
+        opacity: 1;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>My Gallery</h1>
+            <div class="gallery">
+                <figure class="card">
+                    <img src="https://images.unsplash.com/photo-1665910690956-2d16ce1cf515?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                    alt="">
+                    <figcaption>Image1</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://images.unsplash.com/photo-1665910690884-e33a1ffb7bf9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                     alt=""
+                    >
+                    <figcaption>Image2</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://images.unsplash.com/photo-1524228529766-4d7fe5dc55ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1458&q=80"
+                     alt=""
+                    >
+                    <figcaption>Image3</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://images.unsplash.com/photo-1602003953336-6e7adb3d0b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                    alt=""
+                    >
+                    <figcaption>Image4</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1691031428182-c57c4054771b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+                     alt=""
+                    >
+                    <figcaption>Image5</figcaption>
+                </figure>
+                <figure class="card">
+                    <img src="https://images.unsplash.com/photo-1659126574791-13313aa424bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80" 
+                    alt=""
+                    >
+                    <figcaption>Image6</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

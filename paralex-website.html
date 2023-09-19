@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #wrapper{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 10px;
+    }
+    .background-image,.foreground-image{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+    .background-image{
+        transform: translateZ(-40px) scale(5);
+    }
+    .foreground-image{
+        transform: translateZ(-20px) scale(3);
+    }
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+        object-fit: cover;
+    }
+    h1{
+        position: relative;
+        bottom:5rem; 
+        left: 5%;
+        transform: translateX(-40px);
+        font-size: 5rem;
+        letter-spacing: 4px;
+        color: white;
+        text-shadow: 0 0 10px black;
+    }
+    section{
+        background-color: rgb(45, 45, 45);
+        color: white;
+        padding: 5rem 0;
+    }
+    .bg1{
+        background-image: url(https://plus.unsplash.com/premium_photo-1670002388661-686f1e5b1c19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1494&q=80);
+    }
+    .bg2{
+        background-image: url(https://images.unsplash.com/photo-1418846531910-2b7bb1043512?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    }
+    .bg3{
+        background-image: url(https://images.unsplash.com/photo-1505459668311-8dfac7952bf0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    }
+    .bg{
+        position: relative;
+        width: 100%;
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .secheading{
+        font-size: 5rem;
+        padding: 0 10rem;
+    }
+    .text{
+        font-size: 1.5rem;
+        padding: 0 10rem;
+        margin: 5rem 0;
+    }
+    .desc{
+        position: absolute;
+        background-color: white;
+        padding: 0.5rem 2.5rem;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        color: black;
+        font-size: 3.5rem;
+        font-weight: 600;
+        box-shadow: 0 0 10px black;
+    }
+</style>
+<body>
+    <div id="wrapper">
+        <div class="header">
+            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80"
+             alt="mountains" 
+             class="background-image">
+             <img src="https://images.unsplash.com/photo-1491555103944-7c647fd857e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+             alt="man on mountain"
+             class="foreground-image">
+             <h1>ADVANTURE</h1>
+        </div>
+
+        <section>
+            <h2 class="secheading">Adventure Time!</h2>
+            <p class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error totam possimus. Tempore voluptatem magnam eaque facere iusto ab temporibus odit qui? Deleniti, corrupti? Explicabo dignissimos assumenda enim ipsum autem officia, est amet totam, libero, necessitatibus corrupti nobis voluptatum vitae soluta fugit ab esse molestiae? Animi explicabo ipsam nam facilis?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque enim, pariatur debitis eius suscipit molestiae temporibus quos nostrum, accusamus dolor, explicabo laborum consequuntur architecto cumque expedita officiis exercitationem sequi assumenda cum excepturi illum aliquam nemo minus? Sequi saepe mollitia rem odit, ipsam sunt provident dignissimos a labore tempora facere.
+            </p>
+            
+            <div class="bg bg1">
+                <h2 class="desc">BIKING</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error totam possimus. Tempore voluptatem magnam eaque facere iusto ab temporibus odit qui? Deleniti, corrupti? Explicabo dignissimos assumenda enim ipsum autem officia, est amet totam, libero, necessitatibus corrupti nobis voluptatum vitae soluta fugit ab esse molestiae? Animi explicabo ipsam nam facilis?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque enim, pariatur debitis eius suscipit molestiae temporibus quos nostrum, accusamus dolor, explicabo laborum consequuntur architecto cumque expedita officiis exercitationem sequi assumenda cum excepturi illum aliquam nemo minus? Sequi saepe mollitia rem odit, ipsam sunt provident dignissimos a labore tempora facere.
+            </p>
+
+            <div class="bg bg2">
+                <h2 class="desc">PARA GLIDING</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error totam possimus. Tempore voluptatem magnam eaque facere iusto ab temporibus odit qui? Deleniti, corrupti? Explicabo dignissimos assumenda enim ipsum autem officia, est amet totam, libero, necessitatibus corrupti nobis voluptatum vitae soluta fugit ab esse molestiae? Animi explicabo ipsam nam facilis?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque enim, pariatur debitis eius suscipit molestiae temporibus quos nostrum, accusamus dolor, explicabo laborum consequuntur architecto cumque expedita officiis exercitationem sequi assumenda cum excepturi illum aliquam nemo minus? Sequi saepe mollitia rem odit, ipsam sunt provident dignissimos a labore tempora facere.
+            </p>
+
+            <div class="bg bg3">
+                <h2 class="desc">SURFING</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure error totam possimus. Tempore voluptatem magnam eaque facere iusto ab temporibus odit qui? Deleniti, corrupti? Explicabo dignissimos assumenda enim ipsum autem officia, est amet totam, libero, necessitatibus corrupti nobis voluptatum vitae soluta fugit ab esse molestiae? Animi explicabo ipsam nam facilis?
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque enim, pariatur debitis eius suscipit molestiae temporibus quos nostrum, accusamus dolor, explicabo laborum consequuntur architecto cumque expedita officiis exercitationem sequi assumenda cum excepturi illum aliquam nemo minus? Sequi saepe mollitia rem odit, ipsam sunt provident dignissimos a labore tempora facere.
+            </p>
+
+        </section>
+
+
+    </div>
+</body>
+</html>
